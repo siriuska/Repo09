@@ -2,9 +2,12 @@ function myDoWhile() {
   var myNumbers = "";
   let i = 0;
   do {
+    myNumbers += i + ", ";
     i++;
-    i === 9 ? (myNumbers += i) : (myNumbers += i + ", ");
   } while (i < 9);
+  {
+    i === 9 ? (myNumbers += i) : (myNumbers += i + ", ");
+  }
   return myNumbers;
 }
 
